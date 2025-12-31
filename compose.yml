@@ -2,14 +2,14 @@
 version: "3"
 services:
  devopsdb:
-   image: geetha113/db:dbimage
+   image: shaikmustafa/valluri:dbimage
    deploy:
       replicas: 2
    ports:
      - "3306:3306"
 
  application:
-   image: geetha113/appimage:appimage
+   image: shaikmustafa/valluri:appimage
    deploy:
      replicas: 2
    ports:
