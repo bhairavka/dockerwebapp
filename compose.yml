@@ -4,14 +4,14 @@ services:
  devopsdb:
    image: geetha113/db:dbimage
    deploy:
-      replicas: "2"
+      replicas: 2
    ports:
      - "3306:3306"
 
  application:
    image: geetha113/appimage:appimage
    deploy:
-     replicas: "2"
+     replicas: 2
    ports:
      - "1234:8080"
    depends_on:
